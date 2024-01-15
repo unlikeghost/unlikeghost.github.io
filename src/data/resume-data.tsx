@@ -9,7 +9,7 @@ export const RESUME_DATA = {
     "Biomedical Engineering graduate passionate about AI and BCI applications.",
   summary:
     "As a biomedical engineer, I have been involved in various projects directly related to healthcare and biomedical research, aiming to enhance the healthcare system. I predominantly work with Python, PyTorch, and TensorFlow, but I also utilize Node.js, C++, and database management. With over 4 years of experience, I have contributed to different research laboratories, both within my university and in various locations worldwide.",
-  avatarUrl: "/ProfileP.jpg",
+  avatarUrl: "ProfileP.jpg",
   personalWebsiteUrl: "",
   contact: {
     email: "alanhernandezgalvan@icloud.com",
