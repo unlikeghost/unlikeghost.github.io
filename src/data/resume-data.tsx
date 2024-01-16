@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon, ResearchgateIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Jesus Alan Hernandez",
@@ -15,6 +15,11 @@ export const RESUME_DATA = {
     email: "alanhernandezgalvan@icloud.com",
     tel: "(+52)625-124-1954",
     social: [
+      {
+        name:"Researchgate",
+        url:"https://www.researchgate.net/profile/Jesus-Hernandez-100",
+        icon:ResearchgateIcon,
+      },
       {
         name: "GitHub",
         url: "https://github.com/unlikeghost",
