@@ -47,12 +47,22 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Safran Engineering Services",
+      link: "",
+      badges: ["Mexico"],
+      title: "Ai Developer",
+      start: "2024",
+      end: "present",
+      description:
+        "As part of the Innovation Team at Safran Americas, I develop solutions using technologies such as AI, VR, AR, and RPA. I lead projects, manage budgets, and hold meetings with clients to understand their needs and offer tailored proposals. I work on international projects within the corporate group."
+    },
+    {
       company: "Computational Physical Chemistry Lab",
       link: "",
       badges: ["Mexico"],
       title: "Research intern",
       start: "2018",
-      end: "Present",
+      end: "2024",
       description:
         "Research on artificial intelligence models, their development, and deployment within public institutions, along with software development applied to the healthcare sector."
     },
