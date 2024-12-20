@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon, ResearchgateIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, VSCOIcon, ResearchgateIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Jesus Alan Hernandez",
@@ -6,14 +6,14 @@ export const RESUME_DATA = {
   location: "Chihuahua, Chihuahua, Mexico",
   locationLink: "https://maps.app.goo.gl/ikgFPaZ2UnWm4UU66",
   about:
-    "Biomedical Engineering graduate passionate about AI and BCI applications.",
+    "Biomedical Engineer driven by a passion for Artificial Intelligence and Brain-Computer Interface (BCI) technologies, with a focus on advancing innovation at the intersection of healthcare, neuroscience, and cutting-edge technology.",
   summary:
     "As a biomedical engineer, I have been involved in various projects directly related to healthcare and biomedical research, aiming to enhance the healthcare system. I predominantly work with Python, PyTorch, and TensorFlow, but I also utilize Node.js, C++, and database management. With over 4 years of experience, I have contributed to different research laboratories, both within my university and in various locations worldwide.",
   avatarUrl: "ProfileP.jpg",
   personalWebsiteUrl: "",
   contact: {
     email: "alanhernandezgalvan@icloud.com",
-    tel: "(+52)625-124-1954",
+    tel: "(+52)614-462-7052",
     social: [
       {
         name:"Researchgate",
@@ -31,9 +31,9 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
       {
-        name: "X",
-        url: "https://x.com/alanhernandezg",
-        icon: XIcon,
+        name: "VSCO",
+        url: "https://vsco.co/jesusalanhernandezg/gallery",
+        icon: VSCOIcon,
       },
     ],
   },
@@ -50,7 +50,7 @@ export const RESUME_DATA = {
       company: "Safran Engineering Services",
       link: "",
       badges: ["Mexico"],
-      title: "Ai Developer",
+      title: "Innovation Engineer",
       start: "2024",
       end: "present",
       description:
@@ -97,6 +97,8 @@ export const RESUME_DATA = {
     "C++",
     "Node.js",
     "React",
+    "FastAPI",
+    "NextJS"
   ],
   publications:[
     {

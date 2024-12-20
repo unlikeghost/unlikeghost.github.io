@@ -1,6 +1,6 @@
 import { GitHubIcon } from "./GitHubIcon";
 import { LinkedInIcon } from "./LinkedInIcon";
-import { XIcon } from "./XIcon";
+import { VSCOIcon } from "./VSCOIcon";
 import { ResearchgateIcon } from "./ResearchgateIcon";
 
-export { GitHubIcon, LinkedInIcon, XIcon, ResearchgateIcon };
+export { GitHubIcon, LinkedInIcon, VSCOIcon, ResearchgateIcon };
