@@ -7,7 +7,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
-import {PublicationCard} from "@/components/publication-card";
+import { PublicationCard } from "@/components/publication-card";
 import { ConferenceCard } from "@/components/conference-card";
 import { WorkCard } from "@/components/work-card";
 import { EducationCard } from "@/components/education-card";
@@ -40,27 +40,27 @@ export default function Page() {
             <div>
               {RESUME_DATA.contact.email ? (
                 <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-                <a
-                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                  href={`mailto:${RESUME_DATA.contact.email}`}
-                >
-                  <MailIcon className="size-3" />
-                  {RESUME_DATA.contact.email}
-                </a>
-              </p>
-              ):null}
+                  <a
+                    className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                    href={`mailto:${RESUME_DATA.contact.email}`}
+                  >
+                    <MailIcon className="size-3" />
+                    {RESUME_DATA.contact.email}
+                  </a>
+                </p>
+              ) : null}
 
               {RESUME_DATA.contact.tel ? (
                 <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-                <a
-                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                  href={`tel:${RESUME_DATA.contact.tel.replace(/^\(\+(\d+)\)/, '+$1')}`}
-                >
-                  <PhoneIcon className="size-3" />
-                  {RESUME_DATA.contact.tel}
-                </a>
-              </p>
-              ):null}
+                  <a
+                    className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                    href={`tel:${RESUME_DATA.contact.tel.replace(/^\(\+(\d+)\)/, '+$1')}`}
+                  >
+                    <PhoneIcon className="size-3" />
+                    {RESUME_DATA.contact.tel}
+                  </a>
+                </p>
+              ) : null}
             </div>
 
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
@@ -72,10 +72,10 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a 
+                  <a
                     href={social.url}
                     target="_blank"
-                    >
+                  >
                     <social.icon className="size-4" />
                   </a>
                 </Button>
@@ -129,7 +129,7 @@ export default function Page() {
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
-            return(
+            return (
               <WorkCard
                 key={work.company}
                 company={work.company}
@@ -183,8 +183,8 @@ export default function Page() {
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Conferences</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.conferences.map((conference) =>{
-              return(
+            {RESUME_DATA.conferences.map((conference) => {
+              return (
                 <ConferenceCard
                   key={conference.name}
                   name={conference.name}
@@ -207,7 +207,7 @@ export default function Page() {
           </div>
         </Section>
       </section>
-{/* 
+      {/* 
       <CommandMenu
         links={[
           {
