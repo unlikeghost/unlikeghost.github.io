@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-// import { CommandMenu } from "@/components/command-menu";
+import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
@@ -206,8 +206,29 @@ export default function Page() {
             })}
           </div>
         </Section>
+
+      {/* Laguajes */}
+      <Section>
+          <h2 className="text-xl font-bold">Laguajes</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.languajes.map((lang) => {
+              return <Badge key={lang}>{lang}</Badge>;
+            })}
+          </div>
+        </Section>
+
+        {/* PersonalInterests */}
+      <Section>
+          <h2 className="text-xl font-bold">Personal Interests</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.personalinterests.map((perint) => {
+              return <Badge key={perint}>{perint}</Badge>;
+            })}
+          </div>
+        </Section>
+
       </section>
-      {/* 
+      
       <CommandMenu
         links={[
           {
@@ -219,7 +240,7 @@ export default function Page() {
             title: socialMediaLink.name,
           })),
         ]}
-      /> */}
+      />
     </main>
   );
 }

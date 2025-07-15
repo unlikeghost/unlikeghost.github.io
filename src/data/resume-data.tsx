@@ -1,24 +1,24 @@
 import { GitHubIcon, LinkedInIcon, VSCOIcon, ResearchgateIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Jesus Alan Hernandez",
+  name: "Jesus Alan Hernandez Galvan",
   initials: "JAH",
   location: "Chihuahua, Chihuahua, Mexico",
   locationLink: "https://maps.app.goo.gl/ikgFPaZ2UnWm4UU66",
   about:
-    "Biomedical Engineer driven by a passion for Artificial Intelligence and Brain-Computer Interface (BCI) technologies, with a focus on advancing innovation at the intersection of healthcare, neuroscience, and cutting-edge technology.",
+    "Recent graduate in biomedical engineering with 6 years of hands-on research experience in multiple laboratories in Mexico and Japan. Published researcher with 4 publications in AI/ML applications for healthcare. Passionate about Brain-Computer Interfaces and Artificial Intelligence, with proven leadership skills and industry experience applying research expertise to practical solutions.",
   summary:
-    "As a biomedical engineer, I have been involved in various projects directly related to healthcare and biomedical research, aiming to enhance the healthcare system. I predominantly work with Python, PyTorch, and TensorFlow, but I also utilize Node.js, C++, and database management. With over 4 years of experience, I have contributed to different research laboratories, both within my university and in various locations worldwide.",
+    "Biomedical Engineer with extensive research background spanning EEG signal processing, molecular property prediction, and medical AI applications. Co-authored 4 publications while leading research initiatives across international collaborations. Currently transitioning research expertise to industry, with demonstrated ability to develop scalable software solutions and lead cross-functional teams.",
   avatarUrl: "ProfileP.jpg",
-  personalWebsiteUrl: "",
+  personalWebsiteUrl: "https://unlikeghost.github.io/",
   contact: {
     email: "alanhernandezgalvan@icloud.com",
     tel: "(+52)614-462-7052",
     social: [
       {
-        name:"Researchgate",
-        url:"https://www.researchgate.net/profile/Jesus-Hernandez-100",
-        icon:ResearchgateIcon,
+        name: "Researchgate",
+        url: "https://www.researchgate.net/profile/Jesus-Hernandez-100",
+        icon: ResearchgateIcon,
       },
       {
         name: "GitHub",
@@ -39,137 +39,185 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Universidad Autónoma de Chihuahua",
-      degree: "Bachelor's Degree in Biomedical Engineering",
-      start: "2018",
-      end: "2023",
+      school: "Universidad Autónoma de Chihuahua, Facultad de Medicina y Ciencias Biomédicas",
+      degree: "Bachelor of Biomedical Engineering",
+      start: "Jul 2018",
+      end: "Dec 2024",
+      description: "Graduated with Special Mention • Thesis: 'ESTRATEGIAS PARA LA PARALELIZACIÓN DE MODELOS EN ENTORNOS MULTI-GPU'"
     },
   ],
   work: [
     {
       company: "Safran Engineering Services",
       link: "",
-      badges: ["Mexico"],
+      badges: ["Mexico", "Innovation"],
       title: "Innovation Engineer",
-      start: "2024",
-      end: "present",
+      start: "Mar 2024",
+      end: "Jul 2025",
       description:
-        "As part of the Innovation Team at Safran Americas, I develop solutions using technologies such as AI, VR, AR, and RPA. I lead projects, manage budgets, and hold meetings with clients to understand their needs and offer tailored proposals. I work on international projects within the corporate group."
+        "Established foundational infrastructure for new innovation department across Americas region. Developed AI-powered CV classification tool using LLMs and OCR-based validation systems. Collaborated with international teams across France, India, and Mexico. Presented technical results to C-level executives including CTO and CEO."
     },
     {
-      company: "Computational Physical Chemistry Lab",
+      company: "Biomedical Solutions Eonia",
       link: "",
-      badges: ["Mexico"],
-      title: "Research intern",
-      start: "2018",
-      end: "2024",
+      badges: ["Mexico", "Startup"],
+      title: "Co-founder / Technical Lead",
+      start: "Oct 2023",
+      end: "Present",
       description:
-        "Research on artificial intelligence models, their development, and deployment within public institutions, along with software development applied to the healthcare sector."
+        "Co-founded startup developing technology solutions for healthcare applications. Build backend systems and APIs for medical software projects. Develop AI models for disease prediction, medical image segmentation, and clinical classification tasks."
     },
     {
-      company: "Computer Vision Lab",
+      company: "AI & Medical Computing Lab, Universidad Autónoma de Chihuahua",
       link: "",
-      badges: ["Mexico"],
-      title: "Research intern",
-      start: "2020",
+      badges: ["Mexico", "Research"],
+      title: "Research Assistant",
+      start: "2023",
+      end: "2025",
+      description:
+        "Conceived and developed ScOPE algorithm - a novel parameter-free, training-free approach for molecular property prediction that outperformed state-of-the-art AUC benchmarks. Leading author on research article currently under review for publication in high-impact journal."
+    },
+    {
+      company: "Computer Vision Lab, Universidad Autónoma de Chihuahua",
+      link: "",
+      badges: ["Mexico", "Research"],
+      title: "Undergraduate Researcher",
+      start: "2021",
       end: "2023",
       description:
-        ""
+        "Developed subject-independent EEG-based speech recognition system using prototypical networks. Published first-author research in high-impact journal (Biomedical Signal Processing and Control, IF: 5.899). Reduced data requirements by 90% compared to traditional methods."
     },
     {
-      company: "Mirai Innovation Lab",
+      company: "Mirai Innovation Research Institute",
       link: "https://www.mirai-innovation-lab.com/",
-      badges: ["Osaka"],
-      title: "Research intern",
+      badges: ["Osaka, Japan", "Research"],
+      title: "Undergraduate Researcher",
       start: "2020",
-      end: "2020",
+      end: "2021",
       description:
-        "Executed the integration of artificial intelligence models tailored for the healthcare domain, engaging in comprehensive backend and frontend development. Additionally, contributed to research initiatives and ventured into the realm of robotics to enhance the technological landscape."
+        "Developed AI-powered voice-based disease prediction system using natural language processing. Created COVID-19 compliance web application with face recognition and mask detection systems. Contributed to neuromarketing and robotic BCI research projects."
     },
-
+    {
+      company: "Computational Physical Chemistry Lab, Universidad Autónoma de Chihuahua",
+      link: "",
+      badges: ["Mexico", "Research"],
+      title: "Undergraduate Researcher",
+      start: "2018",
+      end: "2025",
+      description:
+        "Developed drug interaction prediction system using random forest algorithms. Deployed maternal and fetal mortality risk assessment model to production. Implemented first multi-GPU segmentation network using PyTorch DDP with NCCL backend in the faculty."
+    },
   ],
   skills: [
     "Python",
-    "Pytorch",
-    "Tensorflow",
-    "Django",
-    "SQL",
-    "C++",
-    "Node.js",
+    "PyTorch",
+    "TensorFlow",
+    "Scikit-learn",
+    "NumPy",
+    "SciPy",
+    "Pandas",
     "React",
+    "Next.js",
+    "Node.js",
     "FastAPI",
-    "NextJS"
+    "RESTful APIs",
+    "SQLAlchemy",
+    "JavaScript",
+    "C++",
+    "SQL",
+    "Git",
+    "Docker",
+    "NGINX",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB"
   ],
-  publications:[
+  publications: [
     {
       title: "A prototypical network for few-shot recognition of speech imagery data",
-      description: "",
+      description: "Biomedical Signal Processing and Control, 86 (2023)",
       link: {
         label: "10.1016/j.bspc.2023.105154",
-        href: "10.1016/j.bspc.2023.105154",
+        href: "https://doi.org/10.1016/j.bspc.2023.105154",
+      },
+    },
+    {
+      title: "Validación de un modelo de inteligencia artificial para la predicción de la mortalidad del paciente con sepsis",
+      description: "Medicina Interna de México, 40(3) (2024)",
+      link: {
+        label: "10.24245/mim.v40i3.9023",
+        href: "https://doi.org/10.24245/mim.v40i3.9023",
+      },
+    },
+    {
+      title: "Outcome classification model for Covid-19 patients using artificial intelligence",
+      description: "Salud Pública de México, 65(1) (2023)",
+      link: {
+        label: "10.21149/13547",
+        href: "https://doi.org/10.21149/13547",
       },
     },
     {
       title: "Imagined Speech Recognition in a Subject Independent Approach Using a Prototypical Network",
-      description: "",
+      description: "XLV Mexican Conference on Biomedical Engineering (2022)",
       link: {
         label: "10.1007/978-3-031-18256-3_4",
-        href: "10.1007/978-3-031-18256-3_4",
-      },
-    },{
-      title: "Outcome classification model for Covid-19 patients using artificial intelligence",
-      description: "",
-      link: {
-        label: "10.21149/13547",
-        href: "10.21149/13547",
+        href: "https://doi.org/10.1007/978-3-031-18256-3_4",
       },
     },
-    {
-      title: "Validation and application of outcome prediction model in Covid-19 patients",
-      description: "",
-      link: {
-        label: "10.21149/15117",
-        href: "10.21149/15117",
-      },
-    }
-
   ],
   projects: [
     {
-      title: "Galenos",
+      title: "ScOPE Algorithm",
       techStack: [
-        "Django",
-        "SQL",
-        "Next.js",
+        "Python",
+        "SMILES",
+        "Compression Algorithms",
       ],
-      description: "I am currently collaborating with a team on the development of a web platform dedicated to managing medical records in the healthcare sector.",
+      description: "Novel parameter-free, training-free approach for molecular property prediction that outperformed state-of-the-art AUC benchmarks on multiple datasets (BBBP, HIV, BACE, ClinTox).",
       link: {
-        label: "www.galenos.tech",
-        href: "https://www.galenos.tech/",
-      },
-    },
-    {
-      title: "Alaisa DNN",
-      techStack: [
-        "TensroFlow",
-        "Flask",
-        "React",
-      ],
-      description: "A web and desktop platform for the classification of Covid-19 results for patients in Chihuahua, Mexico.",
-      link: {
-        label: "",
+        label: "Research Article (Under Review)",
         href: "",
       },
     },
     {
-      title:"SUCA",
+      title: "EEG Speech Recognition System",
       techStack: [
-        "c#",
-        "SQL"
+        "PyTorch",
+        "Prototypical Networks",
+        "EEG Signal Processing",
       ],
-      description: "Desktop platform for generating administrative and predictive statistics for surgical procedures at the Central University Hospital in Chihuahua, Mexico.",
+      description: "Subject-independent EEG-based speech recognition system using meta-learning that reduced data requirements by 90% while maintaining robust cross-device performance.",
       link: {
-        label: "",
+        label: "Published Research",
+        href: "https://doi.org/10.1016/j.bspc.2023.105154",
+      },
+    },
+    {
+      title: "Multi-GPU Segmentation Network",
+      techStack: [
+        "PyTorch",
+        "DDP",
+        "NCCL",
+        "Multi-GPU Computing"
+      ],
+      description: "First multi-GPU computational implementation in the faculty using distributed PyTorch for medical image segmentation with automatic load balancing.",
+      link: {
+        label: "Thesis Project",
+        href: "",
+      },
+    },
+    {
+      title: "AI-Powered CV Classifier",
+      techStack: [
+        "Python",
+        "LLMs",
+        "FastAPI",
+        "OCR"
+      ],
+      description: "Developed for Safran Engineering Services to streamline recruitment process using job descriptions as reference criteria and OCR-based validation systems.",
+      link: {
+        label: "Industry Project",
         href: "",
       },
     },
@@ -177,24 +225,51 @@ export const RESUME_DATA = {
   conferences: [
     {
       name: "Synergy: Biomedical Engineering and Artificial Intelligence",
-      place: "Coloquio de ingenieria biomedica (IBERO Puebla)",
+      place: "Coloquio de Ingeniería Biomédica IBERO, Puebla",
       date: "2023",
       description:
-        "AI's transformative role in biomedical engineering—touching on applications, new paradigms, and exciting opportunities for healthcare advancements."
+        "Presented on AI's transformative role in biomedical engineering, discussing applications, new paradigms, and opportunities for healthcare advancements."
     },
     {
-      name: "The importance of neuroscience in biomedical engineering",
-      place: "Congreso de la Ingeniería Biomédica (IPN)",
+      name: "The Importance of Neuroscience in Biomedical Engineering",
+      place: "Congreso de la Ingeniería Biomédica, Instituto Politécnico Nacional",
       date: "2023",
       description:
-        "Explored the critical role of neuroscience in biomedical engineering, highlighting its significance in shaping innovative solutions and advancements in healthcare."
+        "Explored the critical role of neuroscience in biomedical engineering, highlighting its significance in shaping innovative solutions and advancements in healthcare technology."
     },
     {
-      name: "Imagined Speech Recognition in a Subject Independent Approach Using Prototypical Network",
-      place: "Congreso Nacional de Ingeniería Biomédica",
+      name: "Imagined Speech Recognition Using Prototypical Networks",
+      place: "Congreso Nacional de Ingeniería Biomédica SOMIB",
       date: "2022",
       description:
-        "Explored a subject-independent approach to imagined speech recognition using Prototypical Network and Brain-Computer Interface (BCI), showcasing innovative methods for advancing speech technology and neuroengineering."
+        "Presented subject-independent approach to imagined speech recognition using Prototypical Networks and Brain-Computer Interface (BCI), showcasing innovative methods for advancing speech technology and neuroengineering."
     },
+  ],
+  leadership: [
+    {
+      role: "Vice President",
+      organization: "SOMIB (Society of Mexican Biomedical Engineers) - University Chapter",
+      period: "Current"
+    },
+    {
+      role: "Member",
+      organization: "IEEE (Institute of Electrical and Electronics Engineers)",
+      period: "Current"
+    }
+  ],
+
+  languajes: [
+    "Spanish (Native)",
+    "English (B2/C1)",
+  ],
+
+  personalinterests: [
+    "Travel",
+    "Fitness",
+    "Reading",
+    "Hiking",
+    "Photography",
+    "Animals"
   ]
+  
 } as const;
