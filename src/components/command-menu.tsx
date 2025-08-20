@@ -14,12 +14,31 @@ import {
 import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
 
+import { useState, useEffect } from "react";
+
 interface Props {
   links: { url: string; title: string }[];
 }
 
+const handlePDFDownload = () => {
+  const link = document.createElement('a');
+  link.href = 'resume-jesus_alan_hernandez_galvan.pdf';
+  link.download = 'resume-jesus_alan_hernandez_galvan.pdf';
+  link.click();
+};
+
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
+  const [os, setOS] = useState('unknown');
+
+  const shortcut = os === 'mac' ? '⌘J' : 'Ctrl+J';
+
+  useEffect(() => {
+    const platform = window.navigator.platform.toLowerCase();
+    if (platform.includes('mac')) setOS('mac');
+    else if (platform.includes('win')) setOS('windows');
+    else setOS('other');
+  }, []);
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -38,7 +57,7 @@ export const CommandMenu = ({ links }: Props) => {
       <p className="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block">
         Press{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">⌘</span>J
+          <span className="text-xs">{shortcut}</span>
         </kbd>{" "}
         to open the command menu
       </p>
@@ -58,7 +77,7 @@ export const CommandMenu = ({ links }: Props) => {
             <CommandItem
               onSelect={() => {
                 setOpen(false);
-                window.print();
+                handlePDFDownload();
               }}
             >
               <span>Print</span>
