@@ -13,7 +13,7 @@ import { WorkCard } from "@/components/work-card";
 import { EducationCard } from "@/components/education-card";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+  title: `${RESUME_DATA.name}`,
   description: RESUME_DATA.summary,
 };
 
